@@ -1,0 +1,13 @@
+# Build artifacts and local test output
+*.exe
+*.pdb
+*.lnk
+tests/bin/
+work/
+backups/
+# Local preferences, process inventory and machine-specific data
+protect.txt
+selftest_result.txt
+shortcut_result.txt
+*.log
+.vs/

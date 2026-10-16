@@ -1,0 +1,45 @@
+PASS case-insensitive launch options
+PASS exact argument matching
+PASS quoted startup command
+PASS first instance owns lock
+PASS duplicate instance cannot own lock
+PASS show IPC request retained
+PASS screen-off IPC routing without actual screen-off
+PASS IPC events auto reset
+PASS instance lock released on exit
+Component construction: 72 ms (not a launch benchmark)
+PASS home does not scan processes
+PASS home is immediately interactive
+PASS test mode creates no tray icon
+home: hero={X=0,Y=0,Width=856,Height=374}, off={X=30,Y=286,Width=190,Height=52}
+PASS home primary button has breathing room
+PASS home primary button inside card
+PASS home menu inside header
+PASS design-time rendering never shows native window
+minimum home: hero={X=0,Y=0,Width=760,Height=315}, off={X=30,Y=227,Width=190,Height=52}
+PASS minimum home primary button has breathing room
+PASS minimum home primary button inside card
+PASS minimum home menu inside header
+preferences: hero={X=0,Y=0,Width=856,Height=374}, off={X=30,Y=286,Width=190,Height=52}
+PASS preferences primary button has breathing room
+PASS preferences primary button inside card
+PASS preferences menu inside header
+PASS startup checkbox reflects existing state
+PASS fixture apps render
+PASS secondary info stays in details
+PASS simple view fits viewport
+PASS no close action before selection
+PASS protected fixture stays non-actionable
+PASS protected fixture stays non-actionable
+PASS checked row enables close without executing it
+PASS search filters publisher
+PASS advanced view retained
+PASS test mode never schedules monitor power call
+PASS deferred screen-off updates button state
+PASS tray hide path does not show a window
+PASS close-to-tray intercepts user close
+PASS explicit tray exit is not intercepted
+PASS tray launch starts hidden
+PASS tray launch does not scan
+PASS first visible request suppressed for tray launch
+ALL PASS: 40 checks. No monitor power, process termination, startup writes or desktop capture.
