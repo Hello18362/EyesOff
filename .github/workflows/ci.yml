@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: 编译 + 组件自检
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 编译 EyesOff.exe
+        shell: cmd
+        run: build.bat
+
+      - name: 组件自检
+        shell: pwsh
+        run: ./tests/verify.ps1
+
+      - name: 收集产物
+        uses: actions/upload-artifact@v4
+        with:
+          name: EyesOff-exe
+          path: EyesOff.exe
+          if-no-files-found: error
